@@ -20,6 +20,8 @@
 
     openssh.enable = true;
 
+    blueman.enable = true;
+
     libinput = {
       enable = true;
       mouse = {
@@ -50,10 +52,10 @@
       };
     };
   };
-
   xdg.portal = {
     enable = true;
-    wlr.enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+    ];
   };
 }

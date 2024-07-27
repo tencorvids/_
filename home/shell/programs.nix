@@ -3,6 +3,13 @@
     btop
     bat
     eza
+    fd
+    fzf
+    ripgrep
     lazygit
+    wl-clipboard
+    cliphist
+    unzip
+    just
   ];
 }

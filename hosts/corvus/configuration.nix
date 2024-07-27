@@ -13,7 +13,7 @@
       isNormalUser = true;
       description = username;
       initialPassword = "123";
-      # shell = pkgs.zsh;
+      shell = pkgs.bash;
       extraGroups = ["networkmanager" "wheel" "input" "docker" "kvm" "libvirtd"];
     };
   };

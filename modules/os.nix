@@ -1,7 +1,6 @@
 {
   username,
   pkgs,
-  homeDirectory,
   ...
 }: {
   time.timeZone = "America/New_York";

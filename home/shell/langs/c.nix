@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    firefox
-    obsidian
-    vesktop
+    gcc
+    cmake
+    clang-tools
   ];
 }

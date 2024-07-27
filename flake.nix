@@ -8,7 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    stylix.url = "github:danth/stylix";
     spicetify-nix = {
       url = "github:gerg-l/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +19,6 @@
     nixpkgs,
     home-manager,
     hyprland,
-    stylix,
     ...
   } @ inputs: let
     inherit (nixpkgs.lib) nixosSystem;
@@ -53,16 +51,15 @@
               home-manager = {
                 useUserPackages = true;
                 useGlobalPkgs = false;
-                extraSpecialArgs = {inherit inputs;};
+                extraSpecialArgs = {inherit inputs hostname;};
                 users.${username} = import ./home {
                   inherit (nixpkgsFor.${system}) pkgs;
-                  inherit inputs username homeDirectory;
+                  inherit inputs username homeDirectory hostname;
                 };
                 backupFileExtension = "backup";
               };
             }
             hyprland.nixosModules.default
-            stylix.nixosModules.stylix
           ]
           ++ modules;
       };

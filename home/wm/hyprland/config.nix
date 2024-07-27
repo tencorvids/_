@@ -8,7 +8,8 @@
     xwayland.enable = true;
     settings = {
       exec-once = [
-        "swaybg -m fill -i ~/_/assets/images/wallpaper.png &"
+        "source ~/.bashrc"
+        "swaybg -m fill -i ~/_/documents/images/wallpaper.png &"
         "waybar &"
       ];
 
@@ -24,7 +25,7 @@
 
       general = {
         "$mainMod" = "SUPER";
-        layout = "master";
+        layout = "dwindle";
         gaps_in = 0;
         gaps_out = 0;
         border_size = 2;
@@ -115,7 +116,9 @@
         "$mainMod, Return, exec, kitty"
         "$mainMod, Q, killactive,"
         "$mainMod, J, togglesplit,"
-        # "$mainMod, D, exec, pkill wofi || wofi --show drun"
+        "$mainMod, Space, exec, fuzzel"
+        "$mainMod, F, fullscreen, 0"
+        "$mainMod, D, togglefloating, 0"
 
         # switch focus
         "$mainMod, left, movefocus, l"

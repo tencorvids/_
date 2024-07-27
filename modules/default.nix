@@ -1,5 +1,4 @@
 {
-  config,
   lib,
   gpu,
   ...
@@ -9,6 +8,7 @@
       ./boot.nix
       ./environment.nix
       ./hardware.nix
+      ./network.nix
       ./os.nix
       ./services.nix
     ]
