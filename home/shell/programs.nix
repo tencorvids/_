@@ -11,5 +11,6 @@
     cliphist
     unzip
     just
+    flyctl
   ];
 }
