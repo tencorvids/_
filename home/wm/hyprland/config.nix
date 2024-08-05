@@ -1,6 +1,10 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     swaybg
+    grim
+    slurp
+    swappy
+    wl-clipboard
   ];
 
   wayland.windowManager.hyprland = {
@@ -181,6 +185,10 @@
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+
+        # screenshot
+        "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Documents/images/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        ",Print, exec, grimblast --notify --cursor --freeze copy area"
       ];
 
       # mouse binding

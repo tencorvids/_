@@ -12,5 +12,6 @@
     unzip
     just
     flyctl
+    imv
   ];
 }
