@@ -192,9 +192,9 @@
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
-        # screenshot
-        "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Documents/images/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        # tools
         ",Print, exec, grimblast --notify --cursor --freeze copy area"
+        "$mainMod,Print, exec, grimblast --notify --cursor --freeze copy area | swappy -f -"
       ];
 
       # mouse binding
