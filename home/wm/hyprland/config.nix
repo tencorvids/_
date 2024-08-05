@@ -189,6 +189,7 @@
 
         # tools
         ",Print, exec, grim -g \"$(slurp)\" - | wl-copy"
+        "CTRL,Print, exec, grim - | wl-copy"
         "$mainMod,Print, exec, grim -g \"$(slurp)\" - | wl-copy && wl-paste | swappy -f -"
       ];
 
