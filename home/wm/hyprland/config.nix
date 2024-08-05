@@ -1,6 +1,12 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     swaybg
+    inputs.hypr-contrib.packages.${pkgs.system}.grimblast
+    hyprpicker
     grim
     slurp
     swappy
