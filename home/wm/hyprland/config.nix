@@ -1,11 +1,6 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     swaybg
-    inputs.hypr-contrib.packages.${pkgs.system}.grimblast
     hyprpicker
     grim
     slurp
@@ -193,8 +188,8 @@
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
         # tools
-        ",Print, exec, grimblast --notify --cursor --freeze copy area"
-        "$mainMod,Print, exec, grimblast --notify --cursor --freeze copy area | swappy -f -"
+        # ",Print, exec, grimblast --notify --cursor --freeze copy area"
+        # "$mainMod,Print, exec, grimblast --notify --cursor --freeze copy area | swappy -f -"
       ];
 
       # mouse binding
