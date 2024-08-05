@@ -188,7 +188,7 @@
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
         # tools
-        # ",Print, exec, grimblast --notify --cursor --freeze copy area"
+        ",Print, exec, grim -g \"$(slurp)\" - | wl-copy"
         # "$mainMod,Print, exec, grimblast --notify --cursor --freeze copy area | swappy -f -"
       ];
 
