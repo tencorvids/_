@@ -189,7 +189,7 @@
 
         # tools
         ",Print, exec, grim -g \"$(slurp)\" - | wl-copy"
-        # "$mainMod,Print, exec, grimblast --notify --cursor --freeze copy area | swappy -f -"
+        "$mainMod,Print, exec, grim -g \"$(slurp)\" - | wl-copy && wl-paste | swappy -f -"
       ];
 
       # mouse binding
