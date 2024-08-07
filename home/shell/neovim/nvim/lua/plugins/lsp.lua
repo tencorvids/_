@@ -61,6 +61,7 @@ return {
 				astro = {},
 				svelte = {},
 				tailwindcss = {},
+				csharp_ls = {},
 			}
 
 			local lspconfig = require("lspconfig")
