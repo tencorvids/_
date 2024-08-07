@@ -14,5 +14,6 @@
     flyctl
     imv
     sshpass
+    yazi
   ];
 }
