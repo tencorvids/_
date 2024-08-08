@@ -72,7 +72,7 @@
         homeDirectory = "/home/rew";
         hostname = "corvus";
         cpu = "intel";
-        gpu = "nvidia";
+        gpu = "intel"; # Disabling nvidia drivers for now...
       };
       bones = createNixosConfiguration {
         system = "x86_64-linux";
