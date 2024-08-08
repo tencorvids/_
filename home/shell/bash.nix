@@ -19,7 +19,9 @@
 
       cdnix = "cd ~/_ && nvim ~/_";
       nix-switch = "sudo nixos-rebuild switch --flake ~/_#${hostname}";
+      nix-switch-update = "sudo nixos-rebuild switch --upgrade --flake ~/_#${hostname}";
       nix-full-switch = "sudo nix-collect-garbage -d && sudo nixos-rebuild switch --flake ~/_#${hostname}";
+      nix-update = "sudo nix flake update ~/_";
 
       py = "python";
     };
