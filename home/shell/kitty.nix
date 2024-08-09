@@ -3,7 +3,7 @@
     enable = true;
 
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "IBMPlexMono Nerd Font";
       size = 12;
     };
 

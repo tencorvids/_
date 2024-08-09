@@ -1,6 +1,6 @@
 {...}: let
   custom = {
-    font = "JetBrainsMono Nerd Font";
+    font = "IBMPlexMono Nerd Font";
     font_size = "14px";
     font_weight = "normal";
     text_color = "#ffffff";
