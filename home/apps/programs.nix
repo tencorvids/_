@@ -3,6 +3,7 @@
     discord
     firefox
     obsidian
+    nmap
     rpi-imager
   ];
 }
