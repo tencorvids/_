@@ -3,6 +3,7 @@
     discord
     firefox
     obsidian
+    openvpn
     nmap
     rpi-imager
   ];
