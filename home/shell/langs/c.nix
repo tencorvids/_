@@ -3,6 +3,5 @@
     gcc
     cmake
     clang-tools
-    ninja
   ];
 }
