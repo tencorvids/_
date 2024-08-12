@@ -14,7 +14,7 @@
       description = username;
       initialPassword = "123";
       shell = pkgs.bash;
-      extraGroups = ["networkmanager" "wheel" "input" "docker" "kvm" "libvirtd"];
+      extraGroups = ["wheel" "networkmanager" "disk"];
     };
   };
 
