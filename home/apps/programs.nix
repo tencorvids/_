@@ -3,5 +3,6 @@
     discord
     firefox
     obsidian
+    rpi-imager
   ];
 }
