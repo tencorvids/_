@@ -1,6 +1,6 @@
 {...}: let
   custom = {
-    font = "IBMPlexMono Nerd Font";
+    font = "Geist";
     font_size = "14px";
     font_weight = "normal";
     text_color = "#ffffff";
