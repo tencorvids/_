@@ -13,6 +13,7 @@
     xwayland.enable = true;
     settings = {
       exec-once = [
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "source ~/.bashrc"
         "swaybg -m fill -i ~/_/documents/images/wallpaper.png &"
         "waybar &"
