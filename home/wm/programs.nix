@@ -4,5 +4,6 @@
     pamixer
     pavucontrol
     playerctl
+    wdisplays
   ];
 }
