@@ -132,6 +132,10 @@
         "$mainMod, up, movefocus, u"
         "$mainMod, down, movefocus, d"
 
+        # tab groups
+        "$mainMod, T, togglegroup"
+        "$mainMod, Tab, changegroupactive, f"
+
         # switch workspace
         "$mainMod, 1, workspace, 1"
         "$mainMod, 2, workspace, 2"
@@ -204,6 +208,11 @@
     extraConfig = "
       xwayland {
         force_zero_scaling = true
+      }
+
+     group {
+        col.border_active = rgb(ffffff)
+        col.border_inactive = rgb(777777)
       }
     ";
   };
