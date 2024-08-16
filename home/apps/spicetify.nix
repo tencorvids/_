@@ -17,6 +17,9 @@ in {
     enable = true;
     enabledExtensions = with spicePkgs.extensions; [
       hidePodcasts
+      fullAppDisplay
+      shuffle
+      keyboardShortcut
     ];
     theme = spicePkgs.themes.text;
     colorScheme = "";
