@@ -16,11 +16,9 @@ in {
   programs.spicetify = {
     enable = true;
     enabledExtensions = with spicePkgs.extensions; [
-      adblock
       hidePodcasts
-      shuffle
     ];
-    theme = spicePkgs.themes.matte;
-    colorScheme = "gray-dark3";
+    theme = spicePkgs.themes.text;
+    colorScheme = "";
   };
 }
