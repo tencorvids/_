@@ -84,12 +84,13 @@ return {
 			format_on_save = {
 				timeout_ms = 500,
 				lsp_fallback = true,
-				lsp_format = "fallback",
+				-- lsp_format = "fallback",
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "gofmt" },
 				nix = { "alejandra" },
+				typescript = { "prettier" },
 				-- Add more formatters here
 			},
 		},
