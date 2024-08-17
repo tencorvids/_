@@ -1,6 +1,6 @@
 {config, ...}: {
   hardware = {
-    nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
+    nvidia.package = config.boot.kernelPackages.nvidiaPackages.production;
   };
   environment = {
     sessionVariables = {
