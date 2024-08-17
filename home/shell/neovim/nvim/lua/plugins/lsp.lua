@@ -89,6 +89,7 @@ return {
 				go = { "gofmt" },
 				nix = { "alejandra" },
 				css = { "prettier" },
+				astro = { "prettier" },
 				-- Add more formatters here
 			},
 		},
