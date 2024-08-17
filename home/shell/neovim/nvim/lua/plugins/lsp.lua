@@ -58,6 +58,7 @@ return {
 				},
 				gopls = {},
 				nil_ls = {},
+				tsserver = {},
 				astro = {},
 				svelte = {},
 				tailwindcss = {},
@@ -83,13 +84,12 @@ return {
 			format_on_save = {
 				timeout_ms = 500,
 				lsp_fallback = true,
+				lsp_format = "fallback",
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "gofmt" },
 				nix = { "alejandra" },
-				css = { "prettier" },
-				astro = { "prettier" },
 				-- Add more formatters here
 			},
 		},
