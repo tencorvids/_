@@ -63,7 +63,7 @@ return {
 				svelte = {},
 				tailwindcss = {},
 				csharp_ls = {},
-				pyright = {},
+				pylyzer = {},
 			}
 
 			local lspconfig = require("lspconfig")
