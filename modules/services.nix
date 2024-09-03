@@ -16,11 +16,18 @@
       jack.enable = false;
     };
 
+    printing.enable = true;
     dbus.enable = true;
     fstrim.enable = true;
     openssh.enable = true;
     blueman.enable = true;
     tailscale.enable = true;
+
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
 
     libinput = {
       enable = true;
