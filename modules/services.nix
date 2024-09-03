@@ -16,12 +16,16 @@
       jack.enable = false;
     };
 
-    printing.enable = true;
     dbus.enable = true;
     fstrim.enable = true;
     openssh.enable = true;
     blueman.enable = true;
     tailscale.enable = true;
+
+    printing = {
+      enable = true;
+      drivers = [pkgs.cups-kyodialog];
+    };
 
     avahi = {
       enable = true;
