@@ -16,5 +16,6 @@
     sshpass
     sshfs
     yazi
+    steam-run
   ];
 }
