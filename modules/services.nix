@@ -4,6 +4,7 @@
   gpu,
   ...
 }: {
+  virtualisation.docker.enable = true;
   services = {
     pipewire = {
       enable = true;

@@ -7,5 +7,6 @@
     openvpn
     nmap
     vesktop
+    beekeeper-studio
   ];
 }

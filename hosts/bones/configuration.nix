@@ -14,7 +14,7 @@
       description = username;
       initialPassword = "123";
       shell = pkgs.bash;
-      extraGroups = ["wheel" "networkmanager" "disk"];
+      extraGroups = ["wheel" "networkmanager" "disk" "docker"];
     };
   };
 
