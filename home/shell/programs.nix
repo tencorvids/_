@@ -1,7 +1,10 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    awscli
     btop
     bat
+    docker
+    steam-run
     eza
     fd
     fzf

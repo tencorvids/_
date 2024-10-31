@@ -24,6 +24,9 @@
       nix-update = "sudo nix flake update ~/_";
 
       py = "python";
+
+      bun = "steam-run bun";
+      bunx = "steam-run bunx";
     };
   };
 }
