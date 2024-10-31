@@ -11,7 +11,10 @@
     ripgrep
     lazygit
     wl-clipboard
-    cliphist
+    # cliphist
+    (cliphist.overrideAttrs (oldAttrs: {
+      doCheck = false;
+    }))
     unzip
     just
     flyctl
