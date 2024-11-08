@@ -8,6 +8,7 @@
     eza
     fd
     fzf
+    jq
     ripgrep
     lazygit
     wl-clipboard
