@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     bun
+    deno
     nodejs_22
     nodePackages."typescript-language-server"
     nodePackages."prettier"

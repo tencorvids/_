@@ -59,6 +59,7 @@ return {
 				gopls = {},
 				nil_ls = {},
 				tsserver = {},
+				denols = {},
 				astro = {},
 				svelte = {},
 				tailwindcss = {},

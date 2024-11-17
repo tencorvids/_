@@ -27,6 +27,9 @@
 
       bun = "steam-run bun";
       bunx = "steam-run bunx";
+
+      npm = "steam-run npm";
+      npx = "steam-run npx";
     };
   };
 }
